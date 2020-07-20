@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Self Modern";
+  src: url("./bretagne_self-modern_regular_web.woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Self-Modern-Italic";
+  src: url("./bretagne_self-modern_italic_web.woff2");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Self-Modern-Bold";
+  src: url("./bretagne_self-modern_bold_web.woff2");
+  font-style: normal;
+}

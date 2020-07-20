@@ -1,0 +1,624 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="SuperHi">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Virtual CD Collection</title>
+	<meta name="description" content="A virtual collection of some of my favorite albums">
+	<link rel="icon" href="/images/cd-cursor.png">
+	<meta property="og:title" content="Virtual CD Collection">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="___CURRENT_URL___">
+	<meta property="og:description" content="A virtual collection of some of my favorite albums">
+	<meta property="og:image" content="___ROOT_HOST___/virtual-cd-collection.png">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+	<script src="/superhi.js"></script>
+	<div class="loading">
+		<img src="/images/cd-loader.png">
+		<p>
+			Loading collection...
+		</p>
+	</div>
+
+
+	<header>
+		<!--   <h1>Virtual CD Collection</h1> -->
+		<p>✻ Drag the CDs around to see my collection
+			<span class="italic">(don’t worry they won’t scratch).</span>
+		</p>
+		<p> 💿 Click each CD to see its album info.</p>
+		<p> ← Use the filters on the left to view collection by genre.</p>
+	</header>
+
+	<div class="about">
+		<a href="#"> ✏︎ About site</a>
+	</div>
+
+	<div class="about-modal d-none">
+		<p class="close">X</p>
+		<h3>About site</h3>
+		<p>
+			This site was inspired after stumbling upon my old CD collection. The colorful filters were
+			inspired/swiped from
+			<a href="https://www.nytimes.com/interactive/2018/10/11/style/this-is-18.html#">this awesome NYT interactive
+				article</a>
+			<span class="italic">(although mine doesn't look as good).</span> I used a mix of CSS, lots of
+			Javasctipt/jQuery and the Draggabilly JS library.
+		</p>
+	</div>
+
+	<nav id="filters">
+		<div class="nav-kicker">
+			<p>Filters</p>
+		</div>
+		<ul class="vertical-nav">
+			<a href="all.html" data-filter=".all">
+				<li class="bg-peach nav">
+					<p class="bg-peach">All CDs</p>
+				</li>
+			</a>
+
+			<a href="electronic.html" data-filter=".electronic">
+				<li class="nav bg-lilac">
+					<p class="bg-lilac text-white">Electronic</p>
+				</li>
+			</a>
+
+			<a href="alternative.html" data-filter=".alternative">
+				<li class="nav bg-midnight text-white">
+					<p class="bg-midnight text-white">Alternative & Pop Alternative</p>
+				</li>
+			</a>
+
+			<a href="pop.html" data-filter=".pop">
+				<li class="nav bg-sky">
+					<p class="bg-sky">Pop + Pop Rock</p>
+				</li>
+			</a>
+
+			<a href="jazz.html" data-filter=".jazz">
+				<li class="nav bg-red text-white">
+					<p class="bg-red text-white">Jazz</p>
+				</li>
+			</a>
+
+			<a href="hiphop.html" data-filter=".hiphop">
+				<li class="bg-loomcloud">
+					<p class="bg-loomcloud">Hip Hop + Rap Jazz</p>
+				</li>
+			</a>
+
+			<a href="punk-new-wave.html" data-filter=".punk">
+				<li class="bg-forestgreen text-white">
+					<p class="bg-forestgreen text-white">Punk + 80s New Wave</p>
+				</li>
+			</a>
+
+			<a href="latin.html" data-filter=".latin">
+				<li class="nav bg-earlgrey">
+					<p class="bg-earlgrey">Latin</p>
+				</li>
+			</a>
+
+			<a href="rock.html" data-filter=".rock">
+				<li class="bg-tweetybird">
+					<p class="bg-tweetybird">Rock N Roll</p>
+				</li>
+			</a>
+
+			<a href="soundtracks.html" data-filter=".ost">
+				<li class="bg-lightorange">
+					<p class="bg-lightorange">Soundtracks</p>
+				</li>
+			</a>
+		</ul>
+	</nav>
+
+	<section class="collection">
+
+		<!-- ALTERNATIVE -->
+		<div class="all alternative album draggable">
+			<img src="/images/alt-kid-a.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Kid A</p>
+				<p>Radiohead, 2000</p>
+				<a href="https://open.spotify.com/album/19RUXBFyM4PpmrLRdtqWbp?si=Zg0zEh-RQ8SiKT7ypnvNnA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all alternative album draggable">
+			<img src="/images/alt-fiona-whenthepawn.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">When the pawn</p>
+				<p>Fiona Apple, 1999</p>
+				<a href="https://genius.com/Fiona-apple-when-the-pawn-annotated"> 💿 Full album name</a>
+				<a href="https://open.spotify.com/album/19RUXBFyM4PpmrLRdtqWbp?si=hXQJGquKQ8Gpvv6jLa3e1w">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all alternative album draggable">
+			<img src="/images/alt-nirvana-nvm.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Nervermind</p>
+				<p>Nirvana, 1991</p>
+				<a href="https://open.spotify.com/album/2guirTSEqLizK7j9i1MTTZ?si=VayT6lfsRamdTLNeph2rUA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all alternative album draggable">
+			<img src="/images/alt-in-rainbows.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">In Rainbows</p>
+				<p>Radiohead, 2007</p>
+				<a href="https://open.spotify.com/album/7eyQXxuf2nGj9d2367Gi5f?si=aP4nQXbyQk2Ievry1K0vBQ">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all alternative album draggable">
+			<img src="/images/alt-pjharvey.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">To Bring You My Love</p>
+				<p>PJ Harvey, 1995</p>
+				<a href="https://open.spotify.com/album/2yMg8ronKfVDHngnlLNnl8?si=z0HHzzcoSAm_xNgtXqtoIA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all alternative album draggable">
+			<img src="/images/alt-radiohead.png" class="fit" />
+			<div class="album-info d-none d-none">
+				<p class="album-name">A Moon Shaped Pool</p>
+				<p>Radiohead, 2016</p>
+				<a href="https://open.spotify.com/album/6vuykQgDLUCiZ7YggIpLM9?si=rwMGcuhuSVilfTwBsqAqkA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all alternative album draggable">
+			<img src="/images/alt-spoon.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Ga Ga Ga Ga Ga</p>
+				<p>Spoon, 2007</p>
+				<a href="https://open.spotify.com/album/3k4KtMTnGJsnqTt0AHEmnw?si=qGomXkw8SKayyeXe2l77tQ">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all alternative album draggable">
+			<img src="/images/alt-okcomputer.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">OK Computer</p>
+				<p>Radiohead, 1997</p>
+				<a href="https://open.spotify.com/album/7dxKtc08dYeRVHt3p9CZJn?si=D3TjiES7SEC28I_6JT8D3w">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all alternative album draggable">
+			<img src="/images/alt-the-killers.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Hot Fuss</p>
+				<p>The Killers, 2004</p>
+				<a href="https://open.spotify.com/album/4undIeGmofnAYKhnDclN1w?si=pj5vSLq5T2ywbpPaKgsGAg">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all alternative album draggable">
+			<img src="/images/alt-yyy.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Show Your Bones</p>
+				<p>Yeah Yeah Yeahs, 2006</p>
+				<a href="https://open.spotify.com/album/4vILeh9sgKiDXnyL2pHCiz?si=quXksf-7RtmNJ240wTBMig">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<!--   ELECTRONIC    -->
+		<div class="all electronic album draggable">
+			<img src="/images/electronic-boards-of-canada.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">The Campfire Headphase</p>
+				<p>Boards of Canada, 2005</p>
+				<a href="https://open.spotify.com/album/0wBiN0fKhy0ywx732SpgUs?si=0kMG7J8fQZqFMY7f4A1z0g">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all electronic album draggable">
+			<img src="/images/electronic-bonobo.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Migration</p>
+				<p>Bonobo, 2017</p>
+				<a href="https://open.spotify.com/album/2T64N96AVfsrRFJCUXQEoZ?si=_6O_UQzKTVWNwuv-LwoaJQ">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all electronic album draggable">
+			<img src="/images/electronic-rjd2.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Deadringer</p>
+				<p>RJD2, 2002</p>
+				<a href="https://open.spotify.com/album/7DmNwRBDJRUEFUlk3oa2Aj?si=D8XK1B2aQ7i4BuwxepLthw">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all electronic album draggable">
+			<img src="/images/electronic-blockhead1.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Music by Cavelight</p>
+				<p>Blockhead, 2004</p>
+				<a href="https://open.spotify.com/album/5kEQ9AhNjGvjvplVU3dEkj?si=I1LPRAMxSJuykpvGfPqQVQ">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all electronic album draggable">
+			<img src="/images/electronic-blockhead2.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Interludes After Midnight</p>
+				<p>Blockhead, 2012</p>
+				<a href="https://open.spotify.com/album/17QGk1qjcE7wT52oiLgjdB?si=5tZKYdTgQp6tIvp3IdOyCA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all electronic album draggable">
+			<img src="/images/electronic-blockhead3.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">The Music Scene</p>
+				<p>Blockhead, 2009</p>
+				<a href="https://open.spotify.com/album/4i0QEXwMps7KIuVq5PBckJ?si=s7RoKx0lSaOjCbeKtACrqw">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<!--   POP   -->
+
+		<div class="all pop album draggable">
+			<img src="/images/pop-ariana.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">thank u, next</p>
+				<p>Ariana Grande, 2019</p>
+				<a href="https://open.spotify.com/album/2fYhqwDWXjbpjaIJPEfKFw?si=DzJht8tZQsq4nA2FE41iGA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all pop album draggable">
+			<img src="/images/pop-billie.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">WHEN WE ALL FALL ASLEEP WHERE DO WE GO?</p>
+				<p>Billie Eilish, 2019</p>
+				<a href="https://open.spotify.com/album/0S0KGZnfBGSIssfF54WSJh?si=wv4d4eiISrKfWWpxA3I9lQ">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all pop album draggable">
+			<img src="/images/pop-thriller.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Thriller</p>
+				<p>Michael Jackson, 1982</p>
+				<a href="https://open.spotify.com/album/2ANVost0y2y52ema1E9xAZ?si=k9c3bdX1Tiy3yAyvTv0_4A">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all pop album draggable">
+			<img src="/images/pop-michelle-branch.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">The Spirit Room</p>
+				<p>Michelle Branch, 2001</p>
+				<a href="https://open.spotify.com/album/1agL7TUoZXr0Xd4Irievqi?si=ptMcbzdIQgyTCO4tCOxZMg">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all pop album draggable">
+			<img src="/images/pop-noangel.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">No Angel</p>
+				<p>Dido, 1999</p>
+				<a href="https://open.spotify.com/album/5HC0K52InwrhTEd5zDPzRk?si=KEl89-iRRyKTq8D1yESw4g">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all pop album draggable">
+			<img src="/images/pop-sia.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">1000 Forms of Fear</p>
+				<p>Sia, 2015</p>
+				<a href="https://open.spotify.com/album/6FdNvoO5sF4EKwCX9je1MH?si=JyNKk4IoRQWbEWVWzN0OlQ">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<!--   Jazz   -->
+
+		<div class="all jazz album draggable">
+			<img src="/images/jazz-coltrane.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Trane: The Atlantic Collection</p>
+				<p>John Coltrane, 2017</p>
+				<a href="https://open.spotify.com/album/2G5i8ka9XO6FO5mTBJRL3k?si=t4lnBXVsRgWcs29RpCMbqA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all jazz album draggable">
+			<img src="/images/jazz-miles-davis.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Kind of Blue</p>
+				<p>Miles Davis, 1959</p>
+				<a href="https://open.spotify.com/album/1weenld61qoidwYuZ1GESA?si=a-j4X6w6SCGC5pn0qSmuJQ">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<!--   HIP HOP   -->
+
+		<div class="all hiphop album draggable">
+			<img src="/images/hiphop-atcq.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Midnight Marauders</p>
+				<p>A Tribe Called Quest, 1993</p>
+				<a href="https://open.spotify.com/album/4v5x3Oo3UjQ9YmF3hRAip5?si=maqKmoBTTeOzYRSOTMbGTg">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all hiphop album draggable">
+			<img src="/images/hiphop-damn.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">DAMN.</p>
+				<p>Kendrick Lamar, 2017</p>
+				<a href="https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY?si=FMhydIbEQ82dnlWQxS19_g">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all hiphop album draggable">
+			<img src="/images/hiphop-fugees.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">The Score</p>
+				<p>The Fugees, 1996</p>
+				<a href="https://open.spotify.com/album/18XFe4CPBgVezXkxZP6rTb?si=le-yAEt_RjaUBrrtItKK7g">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all hiphop album draggable">
+			<img src="/images/hiphop-kendrick1.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">good kid, m.A.A.d city</p>
+				<p>Kendrick Lamar, 2012</p>
+				<a href="https://open.spotify.com/album/3DGQ1iZ9XKUQxAUWjfC34w?si=iB1JLAVmSS-zk8cKzNyqNg">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all hiphop album draggable">
+			<img src="/images/hiphop-nas-illmatic.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Illmatic</p>
+				<p>Nas, 1994</p>
+				<a href="https://open.spotify.com/album/3kEtdS2pH6hKcMU9Wioob1?si=dlJod7NnTvuuSNVqrZDyNw">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all hiphop album draggable">
+			<img src="/images/hiphop-deltron3030.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Deltron 3030 - The Instrumentals</p>
+				<p>Deltron 3030, 2000</p>
+				<a href="https://open.spotify.com/album/3lXpgWLPercbWXQ3bRKuhg?si=H3ZqR0DJRGykPG-fEtA28g">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all hiphop album draggable">
+			<img src="/images/hiphop-kdot-section80.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Section.80</p>
+				<p>Kendrick Lamar, 2011</p>
+				<a href="https://open.spotify.com/album/1bkN9nIkkCnXeG4yitVS1J?si=qqO9L-ZESNCxaNUTFldCfQ">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<!--   PUNK / NEW WAVE   -->
+
+		<div class="all punk album draggable">
+			<img src="/images/punk-nw-b52.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Cosmic Thing</p>
+				<p>The B-52s, 1989</p>
+				<a href="https://open.spotify.com/album/5BAzAODqIwttjj7wxmlNMS?si=qvTZshVeQpuPNYCeHA1SvA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all punk album draggable">
+			<img src="/images/punk-nw-blackflag.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Damaged</p>
+				<p>Black Flag, 1981</p>
+				<a href="https://open.spotify.com/album/34aFnrFRBlErcbU6moRZR3?si=piC8R6q9RfW06wczUJ35PQ">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all punk album draggable">
+			<img src="/images/punk-nw-kaleidoscope.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Kaleidoscope</p>
+				<p>Siouxsie & the Banshees, 1980</p>
+				<a href="https://open.spotify.com/album/5jynqY8ZyDoeqrIfYSwF8P?si=Pz6aAhqWQMaMnK15P_WFKA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all punk album draggable">
+			<img src="/images/punk-nw-sexpistols.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Nevermind the Bollocks, Here's the Sex Pistols</p>
+				<p>Sex Pistols, 1977</p>
+				<a href="https://open.spotify.com/album/5fxYu3rqjCNTSPKN8mtEl2?si=dwOuyPoORHOk5SfOIzAXfA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all punk album draggable">
+			<img src="/images/punk-nw-talkingheads.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Speaking in Tongues</p>
+				<p>Talking Heads, 1983</p>
+				<a href="https://open.spotify.com/album/78MM8HrabEGPLVWaJkM2t1?si=9cvzPLATRPSwv3RgnaiUBQ">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all punk rock album draggable">
+			<img src="/images/alt-fugazi.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">13 Songs</p>
+				<p>Fugazi, 1989</p>
+				<a href="https://open.spotify.com/album/21wERoyBas2JCRCgysPDJX?si=A7MDiPYyRv2SHe8X8fThyA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<!-- LATIN POP + HIPHOP   -->
+		<div class="all latin album draggable">
+			<img src="/images/bbunny-balvin.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Oasis</p>
+				<p>Bad Bunny + J Balvin, 2019</p>
+				<a href="https://open.spotify.com/album/6ylFfzx32ICw4L1A7YWNLN?si=1h6zDxjyTxCFcrb4oaGg8A">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all latin album draggable">
+			<img src="/images/rosalia.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">El Mar Querer</p>
+				<p>ROSALÍA, 2018</p>
+				<a href="https://open.spotify.com/album/355bjCHzRJztCzaG5Za4gq?si=9pIkmlOyTrS-Faj0gMAs9g">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all latin album draggable">
+			<img src="/images/x100pre.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">X100PRE</p>
+				<p>Bad Bunny, 2018</p>
+				<a href="https://open.spotify.com/album/7CjJb2mikwAWA1V6kewFBF?si=ejdyTE2lQ5aPFPrIp7GsWw">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all latin album draggable">
+			<img src="/images/yhlqmdlg.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">YHLQMDLG</p>
+				<p>Bad Bunny, 2020</p>
+				<a href="https://open.spotify.com/album/5lJqux7orBlA1QzyiBGti1?si=x4xHXaAzTSCfZlNZqznm2g">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<div class="all latin album draggable">
+			<img src="/images/jbalvin.png" class="fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Vibras</p>
+				<p>J Balvin, 2018</p>
+				<a href="https://open.spotify.com/album/5kprdYds6oZb4iSldfflOT?si=amffIfHbTGCLOUGfl4xQpA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<!--   ROCK N ROLL   -->
+
+		<div class="all alternative rock album draggable">
+			<img src="/images/rock--rhcp2.png" class=" fit" />
+			<div class="album-info d-none">
+				<p class="album-name">Blood Sugar Sex Magik</p>
+				<p>Red Hot Chili Peppers, 1991</p>
+				<a href="https://open.spotify.com/album/1DCI2yWmV4UI7Aga71yx9B?si=of2ZsGb3QdesTTh04k6fuw">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+
+		<!--   SOUNDTRACKS   -->
+
+		<div class="all ost album draggable">
+			<img src="/images/ost-social-network.png" class=" fit" />
+			<div class="album-info d-none">
+				<p class="album-name">The Social Network</p>
+				<p>Trent Reznor and Atticus Ross, 2010</p>
+				<a href="https://open.spotify.com/album/1ijkFiMeHopKkHyvQCWxUa?si=64naWD_vSHO0Sgsssv43qA">🎧 Listen on
+					Spotify</a>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/draggabilly.js"></script>
+	<script src="js/blotter.min.js"></script>
+	<script src="js/liquid-distort-material.js"></script>
+	<script src="js/app.js"></script>
+
+	<script>
+		document.fonts.ready.then(function () {
+			if (window.innerWidth > 800) {
+				var text = new Blotter.Text('Virtual CD Collection', {
+					family: "'Self Modern'",
+					size: 72,
+					fill: '#111118'
+				})
+			} else {
+				var text = new Blotter.Text('Virtual CD Collection', {
+					family: "'Self Modern'",
+					size: 30,
+					fill: '#111118'
+				})
+			}
+
+			var material = new Blotter.LiquidDistortMaterial()
+			material.uniforms.uSpeed.value = 0.2
+			var blotter = new Blotter(material, {
+				texts: text
+			})
+
+			var scope = blotter.forText(text)
+
+			scope.appendTo(document.body)
+		})
+	</script>
+
+
+	<script src="js/filter.js"></script>
+
+</body>
+
+</html>
